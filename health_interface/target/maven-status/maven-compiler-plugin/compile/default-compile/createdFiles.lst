@@ -1,0 +1,7 @@
+com\itxiaoxu\service\OrderService.class
+com\itxiaoxu\service\UserService.class
+com\itxiaoxu\service\CheckGroupService.class
+com\itxiaoxu\service\OrderSettingService.class
+com\itxiaoxu\service\CheckItemService.class
+com\itxiaoxu\service\ReportService.class
+com\itxiaoxu\service\SetmealService.class

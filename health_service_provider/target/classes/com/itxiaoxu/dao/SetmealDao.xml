@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.itxiaoxu.dao.SetmealDao">
+    <!--新增套餐 返回自增ID-->
+    <insert id="addSetmeal" parameterType="com.itxiaoxu.pojo.Setmeal" keyProperty="id" useGeneratedKeys="true">
+        insert into t_setmeal(name,code,helpCode,sex,age,price,remark,attention,img)
+        values (#{name},#{code}, #{helpCode},#{sex},
+        #{age},#{price},#{remark},#{attention},#{img})
+    </insert>
+
+    <!--新增t_setmeal_checkgroup关联表-->
+    <insert id="addSetmealAndCheckGroup" parameterType="map">
+        insert into t_setmeal_checkgroup(setmeal_id,checkgroup_id) values(#{setmealId},#{checkgroupId})
+    </insert>
+
+    <select id="querySetmealByCondition" parameterType="String" resultType="com.itxiaoxu.pojo.Setmeal">
+        select * from t_setmeal
+        <if test="value !=null and value !='' and value.length >0">
+            where code=#{value} or name=#{value} or helpCode =#{value}
+        </if>
+    </select>
+    <select id="findAll" resultType="com.itxiaoxu.pojo.Setmeal">
+        select * from t_setmeal
+    </select>
+
+    <resultMap id="findSetmealAndCheckgroup" type="com.itxiaoxu.pojo.Setmeal">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"/>
+        <result column="code" property="code"/>
+        <result column="helpCode" property="helpCode"/>
+        <result column="sex" property="sex"/>
+        <result column="price" property="price"/>
+        <result column="remark" property="remark"/>
+        <result column="attention" property="attention"/>
+        <result column="img" property="img"/>
+        <collection property="checkGroups" javaType="list"
+                    ofType="com.itxiaoxu.pojo.CheckGroup"
+                    column="id"
+                    select="com.itxiaoxu.dao.CheckGroupDao.findCheckGroupBySetmealId"
+                    />
+
+    </resultMap>
+ <!--根据ID查询体检套餐下的详细信息（包括检查组、检查项）-->
+    <select id="findById" parameterType="int" resultMap="findSetmealAndCheckgroup">
+        select * from t_setmeal  where id =#{id}
+    </select>
+
+    <select id="findSetmealCount" resultType="map" >
+        SELECT  s.`name` ,COUNT(*) AS value FROM t_order o,t_setmeal s
+        WHERE o.`setmeal_id`=s.`id` GROUP BY s.`name`;
+    </select>
+</mapper>

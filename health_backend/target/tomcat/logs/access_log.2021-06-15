@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:22:27:18 +0800] "GET /checkgroup/findById?id=6 HTTP/1.1" 404 989 http-bio-82-exec-1 28
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:22:27:18 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-82-exec-3 1
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:22:28:08 +0800] "GET /checkgroup/findById.do?id=6 HTTP/1.1" 200 186 http-bio-82-exec-4 371
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:22:43:41 +0800] "GET /checkgroup/findById.do?id=7 HTTP/1.1" 200 179 http-bio-82-exec-6 16

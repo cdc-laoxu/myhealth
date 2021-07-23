@@ -1,0 +1,16 @@
+com\itxiaoxu\service\impl\ReportServiceImpl.class
+com\itxiaoxu\service\impl\OrderSettingServiceImpl.class
+com\itxiaoxu\service\impl\CheckGroupServiceImpl.class
+com\itxiaoxu\dao\OrderDao.class
+com\itxiaoxu\dao\OrderSettingDao.class
+com\itxiaoxu\dao\CheckGroupDao.class
+com\itxiaoxu\dao\CheckItemDao.class
+com\itxiaoxu\service\impl\OrderServiceImpl.class
+com\itxiaoxu\dao\SetmealDao.class
+com\itxiaoxu\dao\PermissionDao.class
+com\itxiaoxu\dao\RoleDao.class
+com\itxiaoxu\service\impl\SetmealServiceImpl.class
+com\itxiaoxu\service\impl\CheckItemServiceImpl.class
+com\itxiaoxu\dao\MemberDao.class
+com\itxiaoxu\dao\UserDao.class
+com\itxiaoxu\service\impl\UserServiceImpl.class

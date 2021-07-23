@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:30:45 +0800] "GET /pages/setmeal.html HTTP/1.1" 304 - http-bio-80-exec-1 33
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:30:45 +0800] "POST /setmeal/getSetmeal.do HTTP/1.1" 200 63 http-bio-80-exec-3 87
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:30:59 +0800] "GET /pages/setmeal.html HTTP/1.1" 304 - http-bio-80-exec-4 1
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:30:59 +0800] "GET /img/asset-favico.ico HTTP/1.1" 200 4286 http-bio-80-exec-2 1
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:30:59 +0800] "POST /setmeal/getSetmeal.do HTTP/1.1" 200 2597 http-bio-80-exec-5 383
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:02 +0800] "GET /pages/setmeal_detail.html?id=5 HTTP/1.1" 200 4353 http-bio-80-exec-7 2
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:02 +0800] "POST /setmeal/findById.do?id=5 HTTP/1.1" 200 8722 http-bio-80-exec-8 54
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:04 +0800] "GET /pages/orderInfo.html?id=5 HTTP/1.1" 200 8346 http-bio-80-exec-9 14
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:33 +0800] "GET /plugins/vue/axios.min.map HTTP/1.1" 404 1001 http-bio-80-exec-10 2
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:35 +0800] "POST /order/submit.do HTTP/1.1" 200 48 http-bio-80-exec-10 42
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:35 +0800] "GET /pages/orderSuccess.html?orderId?=12 HTTP/1.1" 200 4489 http-bio-80-exec-10 1
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:35 +0800] "GET /css/page-health-orderNotice.css HTTP/1.1" 200 8645 http-bio-80-exec-10 1
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:35 +0800] "GET /plugins/vue/axios.min.map HTTP/1.1" 404 1001 http-bio-80-exec-10 1
+0:0:0:0:0:0:0:1 - - [13/Jun/2021:12:31:35 +0800] "POST /order/findById.do?id=undefined HTTP/1.1" 404 949 http-bio-80-exec-10 3

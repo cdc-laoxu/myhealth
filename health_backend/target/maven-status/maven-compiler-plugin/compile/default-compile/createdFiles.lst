@@ -1,0 +1,6 @@
+com\itxiaoxu\controller\CheckItemController.class
+com\itxiaoxu\controller\MemberReportController.class
+com\itxiaoxu\controller\OrderSettingController.class
+com\itxiaoxu\services\SpringSecurityUserService.class
+com\itxiaoxu\controller\SetMealController.class
+com\itxiaoxu\controller\CheckGroupController.class
